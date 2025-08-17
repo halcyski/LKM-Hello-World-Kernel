@@ -84,23 +84,23 @@ clean:
 
 ## In order to compile and run this kernel:
 
-    1. First install Windows subsystem for Linux (WSL):
+1. First install Windows subsystem for Linux (WSL):
 ```Powershell
 wsl --install
 ```
 
-    2. Then, follow this guide to install the correct WSL2 kernel headers:
+2. Then, follow this guide to install the correct WSL2 kernel headers:
 https://learn.microsoft.com/en-us/community/content/wsl-user-msft-kernel-v6
 
 
-    3. Clone this repo into a new project folder. 
+3. Clone this repo into a new project folder. 
 
-    4. Execute the command in WSL:
+4. Execute the command in WSL:
 ```Bash
 make clean && make
 ``` 
     
-    5. The following commands load the module, check its output, and unload it.
+5. The following commands load the module, check its output, and unload it.
 ```Bash
 
 # Load the module into the kernel
