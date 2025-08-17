@@ -21,7 +21,7 @@
 ### Loadable Kernel Modules (LKMs)
 - Linux has a monolithic kernel, meaning that the core OS, device drivers, and filesystems all operate within the same privileged address space.
 - To avoid recompiling this massive kernel every time you want to add or modify a driver, Linux uses Loadable Kernel Modules (LKMs).
-- An LMK is a piece of object code (a ``.ko`` file) that can be dynamically linked into and unlinked from the running kernel at any time.
+- An LKM is a piece of object code (a ``.ko`` file) that can be dynamically linked into and unlinked from the running kernel at any time.
 
 
 ### An LKM has a simple and well-defined structure. It requires an entry and exit point.
