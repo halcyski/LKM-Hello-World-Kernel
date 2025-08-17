@@ -18,9 +18,9 @@
 - When a program wants to open a file, it calls a C library function like ``open()``
 - This library function wraps the necessary assembly code (syscall on x86-64) to trap into the kernel. This trap switches the CPU from user mode to kernel mode and transfer the execution to a specific entry point in the kernel's syscall table. The kernel validates the requestion, performs the requested action, and then returns from the trap switching back to CPU back to user mode.
 
-### Loadable Kernel Modules (LMKs)
+### Loadable Kernel Modules (LKMs)
 - Linux has a monolithic kernel, meaning that the core OS, device drivers, and filesystems all operate within the same privileged address space.
-- To avoid recompiling this massive kernel every time you want to add or modify a driver, Linux uses Loadable Kernel Modules (LMKs).
+- To avoid recompiling this massive kernel every time you want to add or modify a driver, Linux uses Loadable Kernel Modules (LKMs).
 - An LMK is a piece of object code (a ``.ko`` file) that can be dynamically linked into and unlinked from the running kernel at any time.
 
 
